@@ -84,6 +84,8 @@ header {
 
 .hero-img {
     background: url('../images/Circle\ design.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .hero .section-title {
