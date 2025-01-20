@@ -41,7 +41,7 @@ header {
 }
 
 .brand {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -89,7 +89,7 @@ header {
 }
 
 .hero .section-title {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
@@ -113,15 +113,56 @@ main{
     max-width: 1040px;
     margin: 0 auto;
 }
+main > section{
+    margin: 100px 0px;
+}
+/* companies section */
 .companies{
     display: flex;
     justify-content: space-around;
     
 }
 
+/* collection section */
+.collection h3{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.cart{
+    padding: 17px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.cart-title{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 1.75rem;
+    color: rgba(24, 25, 31, 1);
+    font-weight: 500;
 
-
-
+}
+.cart-description{
+    font-family: "Inter", serif;
+    margin-top: 5px;
+    font-weight: bold;
+    max-width: 196px;
+    font-size: .8rem;
+    color: rgba(120, 120, 133, 1);
+}
+.price{
+    /* margin-top: 8px; */
+    font-family: "Inter", serif;
+    font-size: 1.5rem;
+    
+}
 
 @media screen and (max-width:576px) {
     .nav{
@@ -150,10 +191,10 @@ main{
         align-items: center;
     }
     .hero .section-title{
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .hero .section-description{
-        font-size: 14px;
+        font-size: .8rem;
     }
     .hero-img{
         height: 257px;
@@ -171,5 +212,15 @@ main{
         flex-wrap: wrap;
         gap: 30px;
         row-gap: 15px;
+    }
+
+    .cart-container{
+        margin: 0px 20px;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(1,90%);
+    }
+    .cart{
+        max-width: 330px;
     }
 }
